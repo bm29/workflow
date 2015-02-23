@@ -38,7 +38,7 @@ def run(**kwargs):
 			"workflowId" 		: workflowId,
 			"subtractions" 		: subtractions,
 			"macromolecules" 	: macromolecules,
-			"workflowStatus" 	: "STARTED",
+			"workflowStatus" 	: "PENDING",
 			"inputParameters" 	: inputParamteres
 		}
 

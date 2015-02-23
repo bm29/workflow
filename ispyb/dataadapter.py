@@ -45,3 +45,6 @@ def upload(workflowId, filePath):
 
 def uploadFitStructureToData(workflowId, subtractionId, structureId, summaryFilePath, fitFilePath, logFilePath):
 	getClient().service.uploadFitStructureToData(workflowId, subtractionId, structureId, summaryFilePath, fitFilePath, logFilePath)
+
+def uploadNFcheck(workflowId, results, ScaledNF, AbsoluteNF):
+	getClient().service.uploadNFcheck(workflowId, results, ScaledNF, AbsoluteNF)

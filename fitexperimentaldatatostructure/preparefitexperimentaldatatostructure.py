@@ -71,22 +71,25 @@ def run(workingFolder, subtractions, macromolecules, inputParameters, **kwargs):
 		fileName = ntpath.basename(filePath)
 		dest = str(workingFolder) + "/" + fileName
 		getFile(filePath, dest)
-		subtractionFile = filePath
+		subtractionFile = dest
 
 	# Gettig pdb filePath of the pdb
 	pdbLocalfilepathList = getPdbFilePath(macromolecules)
+	pdbs = []
 	for filePath in pdbLocalfilepathList:
 		fileName = ntpath.basename(filePath)
 		dest = str(workingFolder) + "/" + fileName
 		getFile(filePath, dest)
 		pdbFile = dest
+		pdbs.append(pdbFile)
 
 	
 	subtractionId = getSubtractionId(subtractions)
 	return {
-		"subtractionFile"	: subtractionFile,
-		"pdbFile"		: pdbFile,
-		"structureId"		: structureId,
-		"subtractionId"		: subtractionId
+		"subtractionFilePathList"	: [subtractionFile],
+		"pdbFile"			: pdbFile,
+		"pdbs"				: pdbs,
+		"structureId"			: structureId,
+		"subtractionId"			: subtractionId
 	}
 	
