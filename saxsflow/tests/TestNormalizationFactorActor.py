@@ -6,10 +6,10 @@ Created on 6 Mar 2015
 import unittest
 import ConfigParser
 from saxsflow.common.webservices import ispyb
-from saxsflow.actors.crysolactor import CrysolActor
+from saxsflow.actors.normalisationactor import NormalisationActor
 
 
-class TestCrysol(unittest.TestCase):
+class Test(unittest.TestCase):
     ispyb = None
 
     def setUp(self):
@@ -28,8 +28,8 @@ class TestCrysol(unittest.TestCase):
 
     def testRun(self):
         json = self.ispyb.getWorkflowByStatus("PENDING")
-        actor = CrysolActor(json)
-        actor.run(actor.getDataset().getSubtractionFilePathList()[0], actor.getDataset().getPDBfilePathList()[0])
+        actor = NormalisationActor(json)
+        actor.run(actor.getDataset().getSubtractionFilePathList()[0], actor.getDataset().getPDBfilePathList()[0], actor.getDataset().getSubtractions(0)["exposureTemperature"])
         pass
 
 if __name__ == "__main__":

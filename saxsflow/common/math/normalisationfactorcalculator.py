@@ -6,7 +6,7 @@ Date: 16/02/2015
 """
 
 
-class Normalisation_Factor_Calculator:
+class NormalisationFactorCalculator:
 
 	# I0_sensitivity = 5
 	

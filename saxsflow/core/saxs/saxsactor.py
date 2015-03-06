@@ -72,7 +72,7 @@ class SaxsActor(object):
             for filePath in self.getDataset().getSubtractionFilePathList():
                 fileName = ntpath.basename(filePath)
                 dest = self.__createFolder(self.inputFolder + "/substraction") + "/" + fileName
-                logger.Logger().log("Copying " + filePath + " to " + dest)
+                #logger.Logger().log("Copying " + filePath + " to " + dest)
                 self.ispyb.getFile(filePath, dest)
                 self.getDataset().setSubtractedfilePath(filePath, dest)
 
@@ -80,12 +80,10 @@ class SaxsActor(object):
             for filePath in self.getDataset().getPDBfilePathList():
                 fileName = ntpath.basename(filePath)
                 dest = self.__createFolder(self.inputFolder + "/pdb") + "/" + fileName
-                logger.Logger().log("Copying " + filePath + " to " + dest)
+                #logger.Logger().log("Copying " + filePath + " to " + dest)
                 self.ispyb.getFile(filePath, dest)
                 self.getDataset().setPDBfilePath(filePath, dest)
 
-            print(str(self.getDataset().getSubtractionFilePathList()))
-            print(str(self.getDataset().getPDBfilePathList()))
         except ValueError:
             print 'My exception occurred, value:', ValueError.value
             raise
