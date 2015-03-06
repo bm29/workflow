@@ -9,7 +9,7 @@ def run(workingFolder, subtractionFile, pdbFile, subtractionId, structureId,  **
 	call(["crysol", "-err", "-cst", pdbFile, subtractionFile])
 	return {
 		"workingFolder"		: workingFolder,
-		"pdbFile"		: pdbFile,
+		"pdbFile"			: pdbFile,
 		"subtractionFile"	: subtractionFile,
 		"structureId"		: structureId,
 		"subtractionId"		: subtractionId
