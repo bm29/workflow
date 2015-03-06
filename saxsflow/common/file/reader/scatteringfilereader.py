@@ -8,7 +8,7 @@ Date: 18/02/2015
 import re
 
 # Calculate the average scattering intensity within a chosen s range
-class Dat_file_scattering_reader:
+class ScatteringFileReader:
     
     def __init__(self, sub_filename):
         self.sub_filename = sub_filename
