@@ -29,7 +29,10 @@ class Test(unittest.TestCase):
     def testRun(self):
         json = self.ispyb.getWorkflowByStatus("PENDING")
         actor = NormalisationActor(json)
-        actor.run(actor.getDataset().getSubtractionFilePathList()[0], actor.getDataset().getPDBfilePathList()[0], actor.getDataset().getSubtractions(0)["exposureTemperature"])
+
+        if len(actor.getDataset().getSubtractionFilePathList()) > 0:
+            if len(actor.getDataset().getPDBfilePathList()) > 0:
+                actor.run(actor.getDataset().getSubtractionFilePathList()[0], actor.getDataset().getPDBfilePathList()[0], actor.getDataset().getSubtractions(0)["exposureTemperature"])
         pass
 
 if __name__ == "__main__":
