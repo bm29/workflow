@@ -5,7 +5,7 @@ Created on 6 Mar 2015
 '''
 import unittest
 from saxsflow.common.webservices import ispyb
-from saxsflow.data.saxsdataset import SaxsDataset
+from saxsflow.core.saxs.dataset import SaxsDataset
 import ConfigParser
 
 
@@ -28,7 +28,6 @@ class Test(unittest.TestCase):
 
     def testSubtractionFilePathList(self):
         print(str(self.ds.getSubtractionFilePathList()))
-        pass
 
     def testSubtractions(self):
         print(str(self.ds.getSubtractions()))

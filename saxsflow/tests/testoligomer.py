@@ -6,7 +6,7 @@ Created on 6 Mar 2015
 import unittest
 import ConfigParser
 from saxsflow.common.webservices import ispyb
-from saxsflow.actors.olygomer import Olygomer
+from saxsflow.actors.oligomer import Oligomer
 
 
 class TestOligomer(unittest.TestCase):
@@ -28,7 +28,7 @@ class TestOligomer(unittest.TestCase):
 
     def testRun(self):
         json = self.ispyb.getWorkflowByStatus("PENDING")
-        actor = Olygomer(json)
+        actor = Oligomer(json)
         actor.run()
 
 if __name__ == "__main__":

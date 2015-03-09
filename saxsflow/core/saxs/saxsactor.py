@@ -7,9 +7,10 @@ import ConfigParser
 import os
 import datetime
 import ntpath
-from saxsflow.data.saxsdataset import SaxsDataset
+from saxsflow.core.saxs.dataset import SaxsDataset
 from saxsflow.common.logger import logger
 from saxsflow.common.webservices import ispyb
+from saxsflow.common.exception.Exception import SaxsFlowException
 
 
 class SaxsActor(object):
@@ -63,7 +64,7 @@ class SaxsActor(object):
                 os.makedirs(destination)
             return destination
         except ValueError:
-            raise
+            raise SaxsFlowException(ValueError.message)
 
     def __prepareFolder(self):
         logger.Logger().log("Preparing folder")
@@ -90,8 +91,7 @@ class SaxsActor(object):
                 self.getDataset().setPDBfilePath(filePath, dest)
 
         except ValueError:
-            print 'My exception occurred, value:', ValueError.value
-            raise
+            raise SaxsFlowException('My exception occurred, value:', ValueError.value)
 
     def preProcessing(self):
         logger.Logger().log("preProcessing")
