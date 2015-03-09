@@ -8,7 +8,7 @@ from saxsflow.common.file.scatteringfile import ScatteringFile
 from saxsflow.common.math.normalisationfactorcalculator import NormalisationFactorCalculator
 
 
-class NormalisationActor(SaxsActor):
+class Normalisation(SaxsActor):
     '''
     classdocs
     '''

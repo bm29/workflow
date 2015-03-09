@@ -6,7 +6,7 @@ Created on 6 Mar 2015
 import unittest
 import ConfigParser
 from saxsflow.common.webservices import ispyb
-from saxsflow.actors.normalisationactor import NormalisationActor
+from saxsflow.actors.normalisation import Normalisation
 
 
 class Test(unittest.TestCase):
@@ -28,7 +28,7 @@ class Test(unittest.TestCase):
 
     def testRun(self):
         json = self.ispyb.getWorkflowByStatus("PENDING")
-        actor = NormalisationActor(json)
+        actor = Normalisation(json)
 
         if len(actor.getDataset().getSubtractionFilePathList()) > 0:
             if len(actor.getDataset().getPDBfilePathList()) > 0:

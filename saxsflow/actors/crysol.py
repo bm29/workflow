@@ -8,12 +8,12 @@ from subprocess import call
 import os
 
 
-class CrysolActor(SaxsActor):
+class Crysol(SaxsActor):
     '''
     classdocs
     '''
     def run(self, subtractionFilePath, pdbFilePath):
         if subtractionFilePath is not None:
             if pdbFilePath is not None:
-                os.chdir(self.outputFolder)
+                os.chdir(self.getOutputFolderPath())
                 call(["crysol", pdbFilePath, subtractionFilePath])

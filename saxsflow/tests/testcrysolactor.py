@@ -6,7 +6,7 @@ Created on 6 Mar 2015
 import unittest
 import ConfigParser
 from saxsflow.common.webservices import ispyb
-from saxsflow.actors.crysolactor import CrysolActor
+from saxsflow.actors.crysol import Crysol
 
 
 class TestCrysol(unittest.TestCase):
@@ -28,7 +28,7 @@ class TestCrysol(unittest.TestCase):
 
     def testRun(self):
         json = self.ispyb.getWorkflowByStatus("PENDING")
-        actor = CrysolActor(json)
+        actor = Crysol(json)
         actor.run(actor.getDataset().getSubtractionFilePathList()[0], actor.getDataset().getPDBfilePathList()[0])
         pass
 

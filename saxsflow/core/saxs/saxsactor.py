@@ -16,16 +16,25 @@ class SaxsActor(object):
     '''
     classdocs
     '''
-    xsDataset = None
-    workingFolder = None
-    inputFolder = None
-    outputFolder = None
+    __xsDataset = None
+    __workingFolder = None
+    __inputFolder = None
+    __outputFolder = None
+
+    def getInputFolderPath(self):
+        return self.__inputFolder
+
+    def getOutputFolderPath(self):
+        return self.__outputFolder
+
+    def getWorkingFolderPath(self):
+        return self.__workingFolder
 
     def __init__(self, jsonRecord):
         '''
         Constructor
         '''
-        self.xsDataset = SaxsDataset(jsonRecord)
+        self.__xsDataset = SaxsDataset(jsonRecord)
 
         # Initializing ISPyB
         config = ConfigParser.ConfigParser()
@@ -40,7 +49,7 @@ class SaxsActor(object):
         # Prepare folder
         self.__prepareFolder()
 
-    def __createFolder(self, destination):
+    def createFolder(self, destination):
         try:
             if not os.path.exists(destination):
                 os.makedirs(destination)
@@ -58,29 +67,25 @@ class SaxsActor(object):
 
     def __prepareFolder(self):
         logger.Logger().log("Preparing folder")
-        self.workingFolder = "/tmp/biosaxsworkflows/" + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        self.__workingFolder = "/tmp/biosaxsworkflows/" + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         try:
             # Creating working folder
-            self.workingFolder = self.__createFolder(self.workingFolder)
+            self.__workingFolder = self.createFolder(self.__workingFolder)
             # Creating input folder
-            self.inputFolder = self.__createFolder(self.workingFolder + "/input")
+            self.__inputFolder = self.createFolder(self.__workingFolder + "/input")
             # Creating output folder
-            self.outputFolder = self.__createFolder(self.workingFolder + "/output")
+            self.__outputFolder = self.createFolder(self.__workingFolder + "/output")
 
             # Downloading subtractions
-            i = 0
             for filePath in self.getDataset().getSubtractionFilePathList():
                 fileName = ntpath.basename(filePath)
-                dest = self.__createFolder(self.inputFolder + "/substraction") + "/" + fileName
-                #logger.Logger().log("Copying " + filePath + " to " + dest)
+                dest = self.createFolder(self.__inputFolder + "/substraction") + "/" + fileName
                 self.ispyb.getFile(filePath, dest)
                 self.getDataset().setSubtractedfilePath(filePath, dest)
 
-            i = 0
             for filePath in self.getDataset().getPDBfilePathList():
                 fileName = ntpath.basename(filePath)
-                dest = self.__createFolder(self.inputFolder + "/pdb") + "/" + fileName
-                #logger.Logger().log("Copying " + filePath + " to " + dest)
+                dest = self.createFolder(self.__inputFolder + "/pdb") + "/" + fileName
                 self.ispyb.getFile(filePath, dest)
                 self.getDataset().setPDBfilePath(filePath, dest)
 
@@ -105,4 +110,4 @@ class SaxsActor(object):
         return
 
     def getDataset(self):
-        return self.xsDataset
+        return self.__xsDataset
