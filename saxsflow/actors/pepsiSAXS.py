@@ -4,8 +4,8 @@ Created on 9 Mar 2015
 @author: ademaria
 '''
 from saxsflow.core.saxs.saxsactor import SaxsActor
-from saxsflow.common.tool.pepsisaxs import PepsiSAXS
-from saxsflow.common.tool import pepsisaxs
+from saxsflow.common.tool.saxs.pepsisaxs import PepsiSAXS
+from saxsflow.common.tool.saxs import pepsisaxs
 
 
 class PepsiSAXS(SaxsActor):

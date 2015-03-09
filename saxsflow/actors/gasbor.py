@@ -4,8 +4,8 @@ Created on 9 Mar 2015
 @author: ademaria
 '''
 from saxsflow.core.saxs.saxsactor import SaxsActor
-from saxsflow.common.tool import gnom
-from saxsflow.common.tool import gasbor
+from saxsflow.common.tool.saxs import gnom
+from saxsflow.common.tool.saxs import gasbor
 import os
 
 

@@ -5,7 +5,7 @@ Created on 6 Mar 2015
 '''
 import os
 from saxsflow.core.saxs.saxsactor import SaxsActor
-from saxsflow.common.tool import crysol
+from saxsflow.common.tool.saxs import crysol
 
 
 class Crysol(SaxsActor):

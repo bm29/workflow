@@ -6,8 +6,8 @@ Created on 6 Mar 2015
 import os
 from saxsflow.core.saxs.saxsactor import SaxsActor
 from saxsflow.common.exception.Exception import SaxsFlowException
-from saxsflow.common.tool.ffmaker import FFmakerTool
-from saxsflow.common.tool import oligomer
+from saxsflow.common.tool.saxs.ffmaker import FFmakerTool
+from saxsflow.common.tool.saxs import oligomer
 
 
 class Oligomer(SaxsActor):
