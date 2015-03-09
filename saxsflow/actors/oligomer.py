@@ -5,10 +5,8 @@ Created on 6 Mar 2015
 '''
 import os
 from saxsflow.core.saxs.saxsactor import SaxsActor
-from subprocess import call
 from saxsflow.common.exception.Exception import SaxsFlowException
 from saxsflow.common.tool.ffmaker import FFmakerTool
-import saxsflow
 from saxsflow.common.tool import oligomer
 
 
@@ -37,10 +35,6 @@ class Oligomer(SaxsActor):
                         oligomerOutputFolder = self.createOligomerFolder()
                         subtractedFilePath = self.getDataset().getSubtractionFilePathList()[0]
                         oligomer.Oligomer().run(oligomerOutputFolder, formFactorFile, subtractedFilePath)
-
-                        # os.chdir(self.createOligomerFolder())
-                        # subtractedFilePath = self.getDataset().getSubtractionFilePathList()[0]
-                        # call(["oligomer", "/FF", formFactorFile, "/dat", subtractedFilePath, "/UN", "2", "/cst", "/fit"])
                     else:
                         raise SaxsFlowException("Not subtractions found")
                 else:
