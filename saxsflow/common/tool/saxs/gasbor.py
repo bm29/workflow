@@ -15,7 +15,7 @@ Created on 9 Mar 2015
 
 class Gasbor(object):
     outputFolder = None
-    maximumNumberResidues = 10
+    maximumNumberResidues = "10"
 
     def run(self, outputFolder, gnomFile):
         try:

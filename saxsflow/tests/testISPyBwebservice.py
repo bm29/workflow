@@ -6,24 +6,12 @@ Created on 6 Mar 2015
 import unittest
 from saxsflow.common.webservices import ispyb
 import ConfigParser
+from saxsflow.tests.SaxsFlowTestCase import SaxsFlowTestCase
 
 
-class Test(unittest.TestCase):
+class Test(SaxsFlowTestCase):
     ispyb = None
 
-    def setUp(self):
-        print("Setup client")
-        # Reading configuration params
-        config = ConfigParser.ConfigParser()
-        config.read('../../conf/testing.conf')
-
-        # Connection parameters
-        url = config.get('Connection', 'url')
-        username = config.get('Connection', 'user')
-        password = config.get('Connection', 'password')
-
-        self.ispyb = ispyb.ISPyB(url, username, password)
-        pass
 
     def tearDown(self):
         print("Finished")
