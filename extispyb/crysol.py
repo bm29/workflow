@@ -37,7 +37,7 @@ def setFinished(projectId, urlExtISPyB, runId):
 def setError(projectId,urlExtISPyB, runId):
 	setStatus(projectId, urlExtISPyB, "ERROR", runId)
 
-def run(projectId, runId, subtractionId, pdbFileId, **kwargs):
+def run(token, projectId, runId, subtractionId, pdbFileId, **kwargs):
 	startDate = datetime.datetime.now()
 	dstPdbFileName = 'pdbFile.pdb'
 	dstSubtractedFileName = 'subtraction.dat'
@@ -58,10 +58,10 @@ def run(projectId, runId, subtractionId, pdbFileId, **kwargs):
 	filePdbUrl = "%s/rest/file/%s/download" % (urlExtISPyB, pdbFileId)
 	urllib.urlretrieve (filePdbUrl, dstPdbFileName)
 
-	# Example : http://pc593.embl.fr:8080/ispyb-ws/rest/540e26188e608d3b699c077d49acf530a05ecbc8/saxs/opd29/subtraction/26825/download
-	token = config.get('Connection', 'token')
+	# Example : http://pc593.embl.fr:8080/ispyb-ws/rest/540e26188e608d3b699c077d49acf530a05ecbc8/proposal/opd29/saxs/subtraction/26825/download
+	# token = config.get('Connection', 'token')
 	user = config.get('Connection', 'user')
-	subtractionUrl = "%s/rest/%s/saxs/%s/subtraction/%s/download" % (urlISPyB, token, user, subtractionId)
+	subtractionUrl = "%s/rest/%s/proposal/%s/saxs/subtraction/%s/download" % (urlISPyB, token, user, subtractionId)
 	urllib.urlretrieve (subtractionUrl, dstSubtractedFileName)
 
 	# Running crysol

@@ -1,0 +1,469 @@
+<!--SUMMARY_BEGIN-->
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 6.5.011: CAD              version 6.5.011 :         ##
+ ###############################################################
+ User: unknown  Run date:  3/ 9/2015 Run time: 15:11:04 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END-->
+ Data line--- labin file 1 ALL
+ Data line--- labin file 2 E1=FreeR_flag
+ Data line--- reso file 2 1000.0 2
+ Data line--- end
+ No CTYP lines input for file:  1
+ No CTYP lines input for file:  2
+    Indices output even if all data items flagged "missing"
+ Warning, NOT all LABOUT data lines given
+ Warning, NOT all LABOUT data lines given
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: truncate.mtz 
+
+ * Title:
+
+ From XDS file unmerged_noanom_XSCALE.hkl, XDS run on 8-Oct-2014 from i
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 1088454
+          DEFAULT
+          NATIVE
+             52.7400  149.0400   79.7500   90.0000   90.0000   90.0000
+             0.97240
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 21360
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF DANO SIGDANO F(+) SIGF(+) F(-) SIGF(-) ISYM
+
+ * Column Types :
+
+ H H H J Q K M K M F Q D Q G L G L Y
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   52.7400  149.0400   79.7500   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00056    0.24999     (     42.191 -      2.000 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'C 2 2 21' (number     20)
+
+  (spacegroup is known)
+
+Reciprocal space symmetry: 
+Space group: "C 2 2 21" Point group: "PG222" Laue group: "mmm" 
+Reference asymmetric unit: "h>=0 and k>=0 and l>=0" 
+  (change of basis may be applied) 
+
+ Spacegroup 20 "C 2 2 21" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l       3  +h,-k,-l       5  -h,+k,-l       7  -h,-k,+l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l       4  -h,+k,+l       6  +h,-k,+l       8  +h,+k,-l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [mmm] hkl:h>=0, k>=0, l>=0
+
+
+ ** "Missing" flag set in HKLIN1 to Nan:
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=IMEAN  E2=SIGIMEAN  E3=I(+)  E4=SIGI(+)  E5=I(-)  E6=SIGI(-)  E7=F  E8=SIGF  E9=DANO  E10=SIGDANO  E11=F(+)  E12=SIGF(+)  E13=F(-)  E14=SIGF(-)  E15=ISYM
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :  18
+ Accumulated Out_Put_MTZ_labels are:
+  E11=IMEAN  E21=SIGIMEAN  E31=I(+)  E41=SIGI(+)
+  E51=I(-)  E61=SIGI(-)  E71=F  E81=SIGF
+  E91=DANO  E101=SIGDANO  E111=F(+)  E121=SIGF(+)
+  E131=F(-)  E141=SIGF(-)  E151=ISYM 
+
+
+ MTZOUT_LABELS are H K L and -
+  IMEAN  SIGIMEAN  I(+)  SIGI(+)
+  I(-)  SIGI(-)  F  SIGF
+  DANO  SIGDANO  F(+)  SIGF(+)
+  F(-)  SIGF(-)  ISYM 
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: free.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 168684
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L F_UNIQUE SIGF_UNIQUE FreeR_flag
+
+ * Column Types :
+
+ H H H F Q I
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   52.7580  148.7830   79.7920   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00018    0.99999     (     74.392 -      1.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'C 2 2 21' (number     20)
+
+ Data line--- LABIN  E1=FreeR_flag
+
+
+ After Processing File_Number:  2
+ Number of columns so far    :  19
+ Accumulated Out_Put_MTZ_labels are:
+  E11=IMEAN  E21=SIGIMEAN  E31=I(+)  E41=SIGI(+)
+  E51=I(-)  E61=SIGI(-)  E71=F  E81=SIGF
+  E91=DANO  E101=SIGDANO  E111=F(+)  E121=SIGF(+)
+  E131=F(-)  E141=SIGF(-)  E151=ISYM  E12=FreeR_flag
+ 
+
+
+ MTZOUT_LABELS are H K L and -
+  IMEAN  SIGIMEAN  I(+)  SIGI(+)
+  I(-)  SIGI(-)  F  SIGF
+  DANO  SIGDANO  F(+)  SIGF(+)
+  F(-)  SIGF(-)  ISYM  FreeR_flag
+ 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=IMEAN  E2=SIGIMEAN  E3=I(+)  E4=SIGI(+)  E5=I(-)  E6=SIGI(-)  E7=F  E8=SIGF  E9=DANO  E10=SIGDANO  E11=F(+)  E12=SIGF(+)  E13=F(-)  E14=SIGF(-)  E15=ISYM
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: truncate.mtz 
+
+ * Title:
+
+ From XDS file unmerged_noanom_XSCALE.hkl, XDS run on 8-Oct-2014 from i
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 1088454
+          DEFAULT
+          NATIVE
+             52.7400  149.0400   79.7500   90.0000   90.0000   90.0000
+             0.97240
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 21360
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF DANO SIGDANO F(+) SIGF(+) F(-) SIGF(-) ISYM
+
+ * Column Types :
+
+ H H H J Q K M K M F Q D Q G L G L Y
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   52.7400  149.0400   79.7500   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00056    0.24999     (     42.191 -      2.000 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'C 2 2 21' (number     20)
+
+  (spacegroup is known)
+
+
+ Column pairs- F+ F-: 14    16
+
+
+ Column pairs- F+ F-: 16    14
+
+
+ Column pairs - SIGs:  7     9
+
+
+ Column pairs - SIGs:  9     7
+
+
+ Column pairs - SIGs: 15    17
+
+
+ Column pairs - SIGs: 17    15
+
+
+ Column pairs - I+ I-:  6     8
+
+
+ Column pairs - I+ I-:  8     6
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of     18 Columns
+ and a total of      21360 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  h00 
+  Multiplicity   4
+
+  EPSILON Zone   2
+  Reflections of type  0k0 
+  Multiplicity   4
+
+  EPSILON Zone   3
+  Reflections of type  00l 
+  Multiplicity   4
+
+  EPSILON Zone   4
+  Reflections of type  hkl 
+  Multiplicity   2
+
+  ******   CENTRIC ZONES  ****** 
+
+  CENTRIC Zone   1
+  Reflections of type  0kl 
+
+  CENTRIC Zone   2
+  Reflections of type  h0l 
+
+  CENTRIC Zone   3
+  Reflections of type  hk0 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =      21360
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      23736
+ Data line--- LABIN  E1=FreeR_flag
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: free.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 168684
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L F_UNIQUE SIGF_UNIQUE FreeR_flag
+
+ * Column Types :
+
+ H H H F Q I
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   52.7580  148.7830   79.7920   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00018    0.99999     (     74.392 -      1.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'C 2 2 21' (number     20)
+
+
+ Reading from HKLIN mtz file_Number = :2
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN2 contains a total of      6 Columns
+ and a total of     168684 Reflections
+
+
+ For file HKLIN2
+ Total Number of HKL read                         =     168684
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =     146987
+ Total Number of HKL passed to sort for this file =      24167
+
+
+ Total number read for all files    =     190044
+ Total passed to sort for all files =      47903
+ Total number systematic absent     =          0
+ Total number rejected outside resol=     146987
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =    15
+
+ File_Number =    2 Number_Columns_Selected =     1
+
+ Data line--- LABOUT E11=IMEAN E21=SIGIMEAN E31=I(+) E41=SIGI(+) E51=I(-) E61=SIGI(-) E71=F E81=SIGF E91=DANO E101=SIGDANO E111=F(+) E121=SIGF(+) E131=F(-) E141=SIGF(-) E151=ISYM E12=FreeR_flag
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: prepared.mtz 
+
+ * Title:
+
+ From XDS file unmerged_noanom_XSCALE.hkl, XDS run on 8-Oct-2014 from i
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 1088454
+          DEFAULT
+          NATIVE
+             52.7400  149.0400   79.7500   90.0000   90.0000   90.0000
+             0.97240
+
+ * Number of Columns = 19
+
+ * Number of Reflections = 21697
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FreeR_flag IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF DANO SIGDANO F(+) SIGF(+) F(-) SIGF(-) ISYM
+
+ * Column Types :
+
+ H H H I J Q K M K M F Q D Q G L G L Y
+
+ * Associated datasets :
+
+ 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   52.7400  149.0400   79.7500   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00018    0.25070     (     74.520 -      1.997 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'C 2 2 21' (number     20)
+
+  (spacegroup is known)
+
+
+
+ Total number from Sorting Routine =      47903
+ Final Total of Unique records to HKLOUT =      21697
+ Final Total of Missing records to HKLOUT =          0
+<!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       0.6s System:    0.0s Elapsed:     0:01  
+<!--SUMMARY_END-->

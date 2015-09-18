@@ -1,0 +1,256 @@
+# workflow log (compatible with Python ConfigParser)
+
+[workflow]
+cwd: /users/opd29/passerelle-edm/scripts/extispyb/Dimplev1_0-00000002sZ7J4K
+prog: /mntdirect/_sware/exp/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/py2/dimple.py
+args:
+ /mntdirect/_sware/exp/pxsoft/EDNA/vMX/edna/tests/data/images/dimple_noanom_aimless.mtz
+ /mntdirect/_sware/exp/pxsoft/EDNA/vMX/edna/tests/data/images/dimple_model.pdb
+ /users/opd29/passerelle-edm/scripts/extispyb/Dimplev1_0-00000002sZ7J4K/dimple
+output_dir: /users/opd29/passerelle-edm/scripts/extispyb/Dimplev1_0-00000002sZ7J4K/dimple
+CCP4: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5
+version: 1.5
+# MTZ                   C 2 2 21     (52.74, 149.04, 79.75,  90, 90, 90)
+# dimple_model.pdb      C 2 2 21     (52.76, 148.78, 79.79,  90, 90, 90)
+
+[pointless]
+start_time: 2015-09-03 14:47:22
+input: TOLERANCE 5
+ end
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/pointless
+args: HKLIN /mntdirect/_sware/exp/pxsoft/EDNA/vMX/edna/tests/data/images/dimple_noanom_aimless.mtz HKLOUT pointless.mtz XYZIN ini.pdb
+end_time: 2015-09-03 14:47:24
+info: resol. 2.00 A   #refl: 21690 -> 21578
+stdout: 01-pointless.log
+refl_out: 21578
+output_cell: (52.74, 149.04, 79.75, 90.0, 90.0, 90.0)
+resol: 2.0
+alt_reindex: [{'cc': '0.547', 'cell_deviat': '0.15', 'op': '[h,k,l]'}]
+refl_in: 21690
+#     [h,k,l]    CC: 0.547    cell_deviation: 0.15
+
+[truncate]
+start_time: 2015-09-03 14:47:24
+input: labin IMEAN=IMEAN SIGIMEAN=SIGIMEAN
+ labout F=F SIGF=SIGF
+ NOHARVEST
+ end
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/truncate
+args: HKLIN pointless.mtz HKLOUT truncate.mtz
+end_time: 2015-09-03 14:47:25
+info:  B=35.8
+stdout: 02-truncate.log
+B-factor: 35.757
+# Generate free-R flags
+
+[unique]
+start_time: 2015-09-03 14:47:25
+input: cell 52.758 148.783 79.792 90 90 90
+ symmetry 'C 2 2 21'
+ resolution 1.000
+ labout F=F_UNIQUE SIGF=SIGF_UNIQUE
+ end
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/unique
+args: HKLOUT unique.mtz
+end_time: 2015-09-03 14:47:25
+info: stdout:  100 lines
+stdout: 03-unique.log
+
+[freerflag]
+start_time: 2015-09-03 14:47:25
+input: end
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/freerflag
+args: HKLIN unique.mtz HKLOUT free.mtz
+end_time: 2015-09-03 14:47:26
+info: stdout:  178 lines
+stdout: 04-freerflag.log
+
+[cad]
+start_time: 2015-09-03 14:47:26
+input: labin file 1 ALL
+ labin file 2 E1=FreeR_flag
+ reso file 2 1000.0 2
+ end
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/cad
+args: HKLIN1 truncate.mtz HKLIN2 free.mtz HKLOUT prepared.mtz
+end_time: 2015-09-03 14:47:26
+info: stdout:  469 lines
+stdout: 05-cad.log
+# Rigid-body refinement with resolution 3.5 A, 10 cycles.
+
+[refmac5 rigid]
+start_time: 2015-09-03 14:47:27
+input: labin FP=F SIGFP=SIGF FREE=FreeR_flag
+ labout FC=FC PHIC=PHIC FWT=2FOFCWT PHWT=PH2FOFCWT DELFWT=FOFCWT PHDELWT=PHFOFCWT
+ refinement type rigidbody resolution 15 3.5
+ scale type simple lssc anisotropic experimental
+ solvent yes vdwprob 1.4 ionprob 0.8 mshrink 0.8
+ rigidbody ncycle 10
+ end
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/refmac5
+args: HKLIN prepared.mtz HKLOUT refmacRB.mtz XYZIN ini.pdb XYZOUT refmacRB.pdb
+end_time: 2015-09-03 14:47:41
+info: 10/10   R/Rfree  0.2330/0.2208  ->  0.2285/0.2177
+stdout: 06-refmac5_rigid.log
+overall_r: 0.2285
+ini_free_r: 0.2208
+iter_overall_r: [0.233, 0.2288, 0.2283, 0.2283, 0.2284, 0.2282, 0.2285, 0.2285, 0.2285, 0.2285, 0.2285]
+iter_free_r: [0.2208, 0.218, 0.2187, 0.2189, 0.2192, 0.2182, 0.2183, 0.2179, 0.2178, 0.2177, 0.2177]
+selected_lines: 
+  $TEXT:Result: $$ Final results $$
+                       Initial    Final
+            R factor    0.2330   0.2285
+              R free    0.2208   0.2177
+  $$
+ini_overall_r: 0.233
+free_r: 0.2177
+cycle: 10
+# No MR for R_free < 0.4
+# Final restrained refinement, 8 cycles.
+
+[refmac5 restr]
+start_time: 2015-09-03 14:47:41
+input: labin FP=F SIGFP=SIGF FREE=FreeR_flag
+ labout FC=FC PHIC=PHIC FWT=2FOFCWT PHWT=PH2FOFCWT DELFWT=FOFCWT PHDELWT=PHFOFCWT
+ make hydrogen all hout no cispeptide yes ssbridge yes
+ refinement type restrained
+ weight auto
+ scale type simple lssc anisotropic experimental
+ solvent yes vdwprob 1.4 ionprob 0.8 mshrink 0.8
+ ncycle 8
+ end
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/refmac5
+args: HKLIN prepared.mtz HKLOUT final.mtz XYZIN refmacRB.pdb XYZOUT final.pdb
+end_time: 2015-09-03 14:48:48
+info:  8/8   R/Rfree  0.3115/0.3044  ->  0.2806/0.3092
+stdout: 07-refmac5_restr.log
+overall_r: 0.2806
+ini_free_r: 0.3044
+iter_overall_r: [0.3115, 0.2962, 0.2876, 0.2845, 0.2825, 0.2816, 0.281, 0.2807, 0.2806]
+iter_free_r: [0.3044, 0.303, 0.3021, 0.3023, 0.3035, 0.305, 0.3074, 0.3088, 0.3092]
+selected_lines: 
+  $TEXT:Result: $$ Final results $$
+                       Initial    Final
+            R factor    0.3115   0.2806
+              R free    0.3044   0.3092
+      Rms BondLength    0.0223   0.0158
+       Rms BondAngle    2.0605   1.7415
+      Rms ChirVolume    0.1310   0.1046
+  $$
+ini_overall_r: 0.3115
+free_r: 0.3092
+cycle: 8
+
+[find-blobs]
+start_time: 2015-09-03 14:48:48
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/find-blobs
+args: -c -s0.8 final.mtz final.pdb
+end_time: 2015-09-03 14:48:48
+info: Blob scores: 381 63 53 52
+stdout: 08-find-blobs.log
+center: (-9.947, -19.5, -6.964)
+blobs: [(-9.45, -31.18, 2.21), (-8.18, -25.96, 10.45), (-12.0, -31.02, 13.33), (-16.34, -22.75, 6.51)]
+scores: [380.7, 62.9, 53.24, 52.01]
+# Rendering 2 largest blobs: at (-9.4, -31.2, 2.2) and at (-8.2, -26.0, 10.4)
+
+[coot]
+start_time: 2015-09-03 14:48:49
+input: # coot script generated by dimple
+ #set_nomenclature_errors_on_read("ignore")
+ molecule = read_pdb('final.pdb')
+ set_rotation_centre(-9.45, -31.18, 2.21)
+ set_zoom(30.)
+ set_view_quaternion(0.437014, 0.0185956, 0, 0.899262)
+ mtz = 'final.mtz'
+ map21 = make_and_draw_map(mtz, "2FOFCWT", "PH2FOFCWT", "", 0, 0)
+ map11 = make_and_draw_map(mtz, "FOFCWT", "PHFOFCWT", "", 0, 1)
+ set_rotation_centre(-9.45, -31.18, 2.21)
+ set_zoom(30.)
+ set_view_quaternion(0.437014, 0.0185956, 0, 0.899262)
+ graphics_draw() # this is needed only for coot in --no-graphics mode
+ raster3d("blob1v1.r3d")
+ set_view_quaternion(0.309016, 0.649023, 0.309016, 0.622725)
+ graphics_draw() # this is needed only for coot in --no-graphics mode
+ raster3d("blob1v2.r3d")
+ set_view_quaternion(0.94489, 0.013149, -0.013149, 0.326859)
+ graphics_draw() # this is needed only for coot in --no-graphics mode
+ raster3d("blob1v3.r3d")# coot script generated by dimple
+ #set_nomenclature_errors_on_read("ignore")
+ molecule = read_pdb('final.pdb')
+ set_rotation_centre(-8.18, -25.96, 10.45)
+ set_zoom(30.)
+ set_view_quaternion(0.17608, 0.048163, 0, 0.983197)
+ mtz = 'final.mtz'
+ map21 = make_and_draw_map(mtz, "2FOFCWT", "PH2FOFCWT", "", 0, 0)
+ map11 = make_and_draw_map(mtz, "FOFCWT", "PHFOFCWT", "", 0, 1)
+ set_rotation_centre(-8.18, -25.96, 10.45)
+ set_zoom(30.)
+ set_view_quaternion(0.17608, 0.048163, 0, 0.983197)
+ graphics_draw() # this is needed only for coot in --no-graphics mode
+ raster3d("blob2v1.r3d")
+ set_view_quaternion(0.124507, 0.729282, 0.124507, 0.661169)
+ graphics_draw() # this is needed only for coot in --no-graphics mode
+ raster3d("blob2v2.r3d")
+ set_view_quaternion(0.819732, 0.0340564, -0.0340564, 0.570718)
+ graphics_draw() # this is needed only for coot in --no-graphics mode
+ raster3d("blob2v3.r3d")
+ coot_real_exit(0)
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/coot
+args: --python --no-graphics --no-guano
+end_time: 2015-09-03 14:48:54
+info: stdout:  359 lines
+stdout: 09-coot.log
+
+[render]
+start_time: 2015-09-03 14:48:54
+stdin: blob1v1.r3d
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/render
+args: -png blob1v1.png
+end_time: 2015-09-03 14:48:54
+info:  -> blob1v1.png
+stderr: 10-render.err
+
+[render 2]
+start_time: 2015-09-03 14:48:54
+stdin: blob1v2.r3d
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/render
+args: -png blob1v2.png
+end_time: 2015-09-03 14:48:55
+info:  -> blob1v2.png
+stderr: 11-render.err
+
+[render 3]
+start_time: 2015-09-03 14:48:55
+stdin: blob1v3.r3d
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/render
+args: -png blob1v3.png
+end_time: 2015-09-03 14:48:55
+info:  -> blob1v3.png
+stderr: 12-render.err
+
+[render 4]
+start_time: 2015-09-03 14:48:55
+stdin: blob2v1.r3d
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/render
+args: -png blob2v1.png
+end_time: 2015-09-03 14:48:56
+info:  -> blob2v1.png
+stderr: 13-render.err
+
+[render 5]
+start_time: 2015-09-03 14:48:56
+stdin: blob2v2.r3d
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/render
+args: -png blob2v2.png
+end_time: 2015-09-03 14:48:57
+info:  -> blob2v2.png
+stderr: 14-render.err
+
+[render 6]
+start_time: 2015-09-03 14:48:57
+stdin: blob2v3.r3d
+prog: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/bin/render
+args: -png blob2v3.png
+end_time: 2015-09-03 14:48:58
+info:  -> blob2v3.png
+stderr: 15-render.err

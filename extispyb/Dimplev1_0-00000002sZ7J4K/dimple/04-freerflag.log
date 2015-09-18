@@ -1,0 +1,178 @@
+<!--SUMMARY_BEGIN-->
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 6.5.011: FREERFLAG            version 1.2 : 04/11/11##
+ ###############################################################
+ User: unknown  Run date:  3/ 9/2015 Run time: 14:47:25 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END-->
+ Data line--- end
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: unique.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 168684
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L F_UNIQUE SIGF_UNIQUE
+
+ * Column Types :
+
+ H H H F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   52.7580  148.7830   79.7920   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00018    0.99999     (     74.392 -      1.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'C 2 2 21' (number     20)
+
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  h00 
+  Multiplicity   4
+
+  EPSILON Zone   2
+  Reflections of type  0k0 
+  Multiplicity   4
+
+  EPSILON Zone   3
+  Reflections of type  00l 
+  Multiplicity   4
+
+  EPSILON Zone   4
+  Reflections of type  hkl 
+  Multiplicity   2
+ lookup =           -1          -1          -1           0
+ lsprgi = H                             K                             L                             FREE                          
+*****   All Reflections binned into  20 segments
+ *** labelled 0 through to  19 ***** 
+
+ Grid of reflections initialized:
+ H K L min     0   0   0
+ H K L max    52 148  79
+ H K L inc    53 149  80
+ ngrid       631760
+
+
+ Number of symmetry operations in the composition point group:  4
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: free.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 6
+
+ * Number of Reflections = 168684
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L F_UNIQUE SIGF_UNIQUE FreeR_flag
+
+ * Column Types :
+
+ H H H F Q I
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   52.7580  148.7830   79.7920   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00018    0.99999     (     74.392 -      1.000 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'C 2 2 21' (number     20)
+
+ Number of reflections:  168684
+ Number for flagged reflections for each bin: 
+ Reflection flag =:      Number:
+                     0              8462       0
+                     1              8352       0
+                     2              8461       0
+                     3              8547       0
+                     4              8467       0
+                     5              8423       0
+                     6              8545       0
+                     7              8367       0
+                     8              8484       0
+                     9              8475       0
+                    10              8482       0
+                    11              8385       0
+                    12              8441       0
+                    13              8402       0
+                    14              8328       0
+                    15              8449       0
+                    16              8370       0
+                    17              8412       0
+                    18              8277       0
+                    19              8555       0
+Averages:    8434       0
+<!--SUMMARY_BEGIN-->
+ FREERFLAG:  Normal termination
+Times: User:       0.9s System:    0.0s Elapsed:     0:01  
+<!--SUMMARY_END-->

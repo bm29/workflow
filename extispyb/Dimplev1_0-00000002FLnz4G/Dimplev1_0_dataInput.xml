@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<XSDataInputDimple>
+    <mtz>
+        <path>
+            <value>/mntdirect/_sware/exp/pxsoft/EDNA/vMX/edna/tests/data/images/dimple_noanom_aimless.mtz</value>
+        </path>
+    </mtz>
+    <pdb>
+        <path>
+            <value>/mntdirect/_sware/exp/pxsoft/EDNA/vMX/edna/tests/data/images/dimple_model.pdb</value>
+        </path>
+    </pdb>
+</XSDataInputDimple>

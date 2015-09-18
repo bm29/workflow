@@ -1,0 +1,359 @@
+INFO:: Using Standard CCP4 Refmac dictionary from CLIBD_MON: /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/
+There are 138 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/list/mon_lib_list.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/a/ALA.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/a/ASP.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/a/ASN.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/c/CYS.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/g/GLN.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/g/GLY.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/g/GLU.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/p/PHE.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/h/HIS.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/i/ILE.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/l/LYS.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/l/LEU.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/m/MET.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/m/MSE.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/p/PRO.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/a/ARG.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/s/SER.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/t/THR.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/v/VAL.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/t/TRP.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/t/TYR.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/p/PO4.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/s/SO4.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/g/GOL.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/c/CIT.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/a/AR.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/c/CR.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/c/CD.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/g/GD.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/a/A.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/c/C.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/g/G.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/u/U.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/d/DA.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/d/DC.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/d/DG.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/d/DT.cif
+There are 2 data in /opt/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/data/monomers/h/HOH.cif
+Reading coordinate file: /mntdirect/_sware/exp/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/share/coot/standard-residues.pdb
+ PDB file /mntdirect/_sware/exp/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/share/coot/standard-residues.pdb has been read.
+Spacegroup: P 1
+initalize graphics molecules...done.
+[1m(filter-fileselection-filenames-state)[0m
+[1m(get-active-map-drag-flag)[0m
+[1m(use-graphics-interface-state)[0m
+Importing python module coot using command from coot import *
+INFO:: coot.py imported
+Running python script /mntdirect/_sware/exp/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/lib/python2.7/site-packages/coot/coot_load_modules.py
+Loading: redefine_functions.py
+Loading: coot_utils.py
+Loading: filter.py
+Loading: coot_lsq.py
+Loading: shelx.py
+Loading: get_ebi.py
+Loading: local_code.py
+Loading: hello.py
+Good Afternoon None, Welcome to Coot. 0.8.1
+[1m(set-display-intro-string "Good Afternoon None, Welcome to Coot. 0.8.1")[0m
+Loading: mutate.py
+Loading: refmac.py
+Loading: libcheck.py
+Loading: gap.py
+Loading: fitting.py
+Loading: raster3d.py
+Loading: povray.py
+Loading: remote_control.py
+Loading: generic_objects.py
+Loading: ncs.py
+Loading: parse_pisa_xml.py
+Loading: cns2coot.py
+Loading: clear_backup.py
+Loading: tips.py
+Loading: prodrg_import.py
+Loading: jligand.py
+Loading: americanisms.py
+Loading: group_settings.py
+Loading: brute_lsqman.py
+[1m(filter-fileselection-filenames-state)[0m
+[1m(get-active-map-drag-flag)[0m
+[1m(use-graphics-interface-state)[0m
+Loading scheme files from /mntdirect/_sware/exp/pxsoft/ccp4/v6.5/linux-x86_64/ccp4-6.5/share/coot/scheme
+[1m(set-display-intro-string "Good afternoon operator. Welcome to Coot")[0m
+[1m(set-display-lists-for-maps 0)[0m
+[1m(filter-fileselection-filenames-state)[0m
+[1m(get-active-map-drag-flag)[0m
+[1m(use-graphics-interface-state)[0m
+[1m(handle-read-draw-molecule-with-recentre "final.pdb" 1)[0m
+Reading coordinate file: final.pdb
+ PDB file final.pdb has been read.
+Spacegroup: C 2 2 21
+INFO:: Found 1 models
+   Model 1 had 0 links
+Symmetry available for this molecule
+Molecule 0 read successfully
+DEBUG:: there were 0 types with no dictionary 
+[1m(set-rotation-centre -9.45 -31.18  2.21)[0m
+[1m(make-and-draw-map "final.mtz" "2FOFCWT" "PH2FOFCWT" "" 0 0)[0m
+INFO:: making map from mtz filename final.mtz
+Number of OBSERVED reflections: 21697
+INFO:: finding ASU unique map points with sampling rate 1.5
+INFO grid sampling...Nuvw = (  80, 224, 120)
+INFO:: 0.07 seconds to read MTZ file
+INFO:: 0.032 seconds to initialize map
+INFO:: 0.149 seconds for FFT
+INFO:: 0.022 seconds for statistics
+      Map mean: ........ -2.70966e-05
+      Map sigma: ....... 0.303175
+      Map maximum: ..... 2.38744
+      Map minimum: ..... -0.988651
+INFO:: 0.072 seconds for contour map
+INFO:: 0.345 seconds in total
+[1m(make-and-draw-map "final.mtz" "FOFCWT" "PHFOFCWT" "" 0 1)[0m
+INFO:: making map from mtz filename final.mtz
+Number of OBSERVED reflections: 21697
+INFO:: finding ASU unique map points with sampling rate 1.5
+INFO grid sampling...Nuvw = (  80, 224, 120)
+INFO:: 0.046 seconds to read MTZ file
+INFO:: 0.001 seconds to initialize map
+INFO:: 0.147 seconds for FFT
+INFO:: 0.023 seconds for statistics
+      Map mean: ........ -7.7171e-06
+      Map sigma: ....... 0.134609
+      Map maximum: ..... 1.24052
+      Map minimum: ..... -0.719939
+INFO:: 0.025 seconds for contour map
+INFO:: 0.242 seconds in total
+[1m(set-rotation-centre -9.45 -31.18  2.21)[0m
+Generating raytrace molecule objects...
+ molecule 0 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 0
+ molecule 1 in  raytrace
+ molecule 2 in  raytrace
+Rendering raytrace...
+using tiles: 75 75
+view centre:     xyz = (      9.45,     31.18,     -2.21)
+render recentre: xyz = (     10.02,     17.69,    -25.56)
+FRONTCLIP 3
+BACKCLIP -9
+rendering ray trace number: 0
+rendering ray trace number: 1
+rendering ray trace number: 2
+rendering ray trace number: 3
+rendering ray trace number: 4
+rendering ray trace number: 5
+rendering ray trace number: 6
+done raytrace.
+Generating raytrace molecule objects...
+ molecule 0 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 0
+ molecule 1 in  raytrace
+ molecule 2 in  raytrace
+Rendering raytrace...
+using tiles: 75 75
+view centre:     xyz = (      9.45,     31.18,     -2.21)
+render recentre: xyz = (     25.56,     17.69,     10.02)
+FRONTCLIP 3
+BACKCLIP -9
+rendering ray trace number: 0
+rendering ray trace number: 1
+rendering ray trace number: 2
+rendering ray trace number: 3
+rendering ray trace number: 4
+rendering ray trace number: 5
+rendering ray trace number: 6
+done raytrace.
+Generating raytrace molecule objects...
+ molecule 0 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 0
+ molecule 1 in  raytrace
+ molecule 2 in  raytrace
+Rendering raytrace...
+using tiles: 75 75
+view centre:     xyz = (      9.45,     31.18,     -2.21)
+render recentre: xyz = (     10.02,    -25.56,    -17.69)
+FRONTCLIP 3
+BACKCLIP -9
+rendering ray trace number: 0
+rendering ray trace number: 1
+rendering ray trace number: 2
+rendering ray trace number: 3
+rendering ray trace number: 4
+rendering ray trace number: 5
+rendering ray trace number: 6
+done raytrace.
+[1m(handle-read-draw-molecule-with-recentre "final.pdb" 1)[0m
+Reading coordinate file: final.pdb
+ PDB file final.pdb has been read.
+Spacegroup: C 2 2 21
+INFO:: Found 1 models
+   Model 1 had 0 links
+Symmetry available for this molecule
+Molecule 3 read successfully
+DEBUG:: there were 0 types with no dictionary 
+[1m(set-rotation-centre -8.18 -25.96 10.45)[0m
+[1m(make-and-draw-map "final.mtz" "2FOFCWT" "PH2FOFCWT" "" 0 0)[0m
+INFO:: making map from mtz filename final.mtz
+Number of OBSERVED reflections: 21697
+INFO:: finding ASU unique map points with sampling rate 1.5
+INFO grid sampling...Nuvw = (  80, 224, 120)
+INFO:: 0.047 seconds to read MTZ file
+INFO:: 0.001 seconds to initialize map
+INFO:: 0.149 seconds for FFT
+INFO:: 0.022 seconds for statistics
+      Map mean: ........ -2.70966e-05
+      Map sigma: ....... 0.303175
+      Map maximum: ..... 2.38744
+      Map minimum: ..... -0.988651
+INFO:: 0.057 seconds for contour map
+INFO:: 0.276 seconds in total
+[1m(make-and-draw-map "final.mtz" "FOFCWT" "PHFOFCWT" "" 0 1)[0m
+INFO:: making map from mtz filename final.mtz
+Number of OBSERVED reflections: 21697
+INFO:: finding ASU unique map points with sampling rate 1.5
+INFO grid sampling...Nuvw = (  80, 224, 120)
+INFO:: 0.046 seconds to read MTZ file
+INFO:: 0.002 seconds to initialize map
+INFO:: 0.147 seconds for FFT
+INFO:: 0.022 seconds for statistics
+      Map mean: ........ -7.7171e-06
+      Map sigma: ....... 0.134609
+      Map maximum: ..... 1.24052
+      Map minimum: ..... -0.719939
+INFO:: 0.027 seconds for contour map
+INFO:: 0.244 seconds in total
+[1m(set-rotation-centre -8.18 -25.96 10.45)[0m
+Generating raytrace molecule objects...
+ molecule 0 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 0
+ molecule 1 in  raytrace
+ molecule 2 in  raytrace
+ molecule 3 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 3
+ molecule 4 in  raytrace
+ molecule 5 in  raytrace
+Rendering raytrace...
+using tiles: 75 75
+view centre:     xyz = (      8.18,     25.96,    -10.45)
+render recentre: xyz = (     9.572,     20.87,    -17.97)
+FRONTCLIP 3
+BACKCLIP -9
+rendering ray trace number: 0
+rendering ray trace number: 1
+rendering ray trace number: 2
+rendering ray trace number: 3
+rendering ray trace number: 4
+rendering ray trace number: 5
+rendering ray trace number: 6
+rendering ray trace number: 7
+rendering ray trace number: 8
+rendering ray trace number: 9
+rendering ray trace number: 10
+rendering ray trace number: 11
+rendering ray trace number: 12
+rendering ray trace number: 13
+done raytrace.
+Generating raytrace molecule objects...
+ molecule 0 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 0
+ molecule 1 in  raytrace
+ molecule 2 in  raytrace
+ molecule 3 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 3
+ molecule 4 in  raytrace
+ molecule 5 in  raytrace
+Rendering raytrace...
+using tiles: 75 75
+view centre:     xyz = (      8.18,     25.96,    -10.45)
+render recentre: xyz = (     17.97,     20.87,     9.572)
+FRONTCLIP 3
+BACKCLIP -9
+rendering ray trace number: 0
+rendering ray trace number: 1
+rendering ray trace number: 2
+rendering ray trace number: 3
+rendering ray trace number: 4
+rendering ray trace number: 5
+rendering ray trace number: 6
+rendering ray trace number: 7
+rendering ray trace number: 8
+rendering ray trace number: 9
+rendering ray trace number: 10
+rendering ray trace number: 11
+rendering ray trace number: 12
+rendering ray trace number: 13
+done raytrace.
+Generating raytrace molecule objects...
+ molecule 0 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 0
+ molecule 1 in  raytrace
+ molecule 2 in  raytrace
+ molecule 3 in  raytrace
+ There are 2098 atom centres in this bonds_box
+DEBUG:: Done fill_raster_model_info for 3
+ molecule 4 in  raytrace
+ molecule 5 in  raytrace
+Rendering raytrace...
+using tiles: 75 75
+view centre:     xyz = (      8.18,     25.96,    -10.45)
+render recentre: xyz = (     9.572,    -17.97,    -20.87)
+FRONTCLIP 3
+BACKCLIP -9
+rendering ray trace number: 0
+rendering ray trace number: 1
+rendering ray trace number: 2
+rendering ray trace number: 3
+rendering ray trace number: 4
+rendering ray trace number: 5
+rendering ray trace number: 6
+rendering ray trace number: 7
+rendering ray trace number: 8
+rendering ray trace number: 9
+rendering ray trace number: 10
+rendering ray trace number: 11
+rendering ray trace number: 12
+rendering ray trace number: 13
+done raytrace.
+[1m(stereo-mode-state)[0m
+[1m(save-state)[0m
+load "filter.scm"
+load "matrices.scm"
+load "coot-utils.scm"
+load "redefine-functions.scm"
+load "json-reader.scm"
+load "coot-lsq.scm"
+load "shelx.scm"
+load "get-ebi.scm"
+load "local-code.scm"
+load "hello.scm"
+Good afternoon operator for beamline. Welcome to Coot 0.8.1.
+load "mutate.scm"
+load "refmac.scm"
+load "brute-lsqman.scm"
+load "libcheck.scm"
+load "gap.scm"
+load "fitting.scm"
+load "raster3d.scm"
+load "povray.scm"
+load "remote-control.scm"
+load "generic-objects.scm"
+load "fascinating-things.scm"
+load "ncs.scm"
+load "parse-pisa-xml.scm"
+load "cns2coot.scm"
+load "clear-backup.scm"
+load "tips.scm"
+load "prodrg-import.scm"
+load "jligand.scm"
+load "americanisms.scm"
+load "group-settings.scm"
